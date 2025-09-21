@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>이미지 정렬 시각화</title>
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container"></div>
+
+<div id="controls">
+    <button id="shuffleBtn">섞기</button>
+    <button id="toggleBtn">시작</button>
+    <select id="sortSelect">
+        <option value="bubble">버블 정렬</option>
+        <option value="selection">선택 정렬</option>
+        <option value="insertion">삽입 정렬</option>
+        <option value="shell">셸 정렬</option>
+        <option value="heap">힙 정렬</option>
+        <option value="quick">퀵 정렬</option>
+        <option value="merge">병합 정렬</option>
+        <option value="counting">계수 정렬</option>
+        <option value="radix">기수 정렬</option>
+        <option value="stooge">스투지 정렬</option>
+        <option value="tim">Tim sort</option>
+        <option value="intro">Intro sort</option>
+        <option value="blockMerge">Block merge sort</option>
+        <option value="patternQuick">Pattern-defeating quicksort</option>
+    </select>
+    <label>속도(ms): <input id="speedInput" type="number" value="5" min="1" max="1000"></label>
+    <span id="status">대기 중</span>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
